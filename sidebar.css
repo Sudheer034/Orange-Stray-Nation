@@ -96,10 +96,9 @@ aside
   color: white;
 }
 
-
 .friend-list button:hover svg, .friends-block button:hover svg
 {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .friend-list button:active svg, .friends-block button:active svg
@@ -142,7 +141,8 @@ aside
   padding: 5px 10px;
 }
 
-.friends-block svg
+.friends-block button svg, .friend-list button svg
 {
   color: white;
+  transition: .15s ease all;
 }
