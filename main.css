@@ -1,0 +1,313 @@
+body
+{
+  margin: 0;
+  color: white;
+  background: #272c31;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Montserrat", sans-serif;
+}
+
+p
+{
+  margin: 0;
+}
+
+aside
+{
+  background-color: #222629;
+  border-radius: 8px;
+  margin: 2px 2px;
+  min-height: 98vh;
+  box-shadow: 0px 12px 12px black;
+}
+
+.user-block, .friend-list, .friends-block
+{
+  box-sizing: border-box;
+  background-color: #343a40;
+  border-radius: 6px;
+  box-shadow: 1px 2px 2px black;
+  width: 99%;
+}
+
+.user-block
+{
+  margin-top: 4px;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  justify-items: center;
+  align-items: center;
+  font-weight: bold;
+  text-align: center;
+  height: 75px;
+}
+
+.user-block img
+{
+  width: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.user-info
+{
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+  text-shadow: 0px 0px 1px black;
+}
+
+.user-info p
+{
+  font-size: 1.2em;
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: default;
+}
+
+.user-info a
+{
+  text-decoration: none;
+  color: #7bb5fd;
+}
+
+.friend-list
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  margin-top: 6px;
+  padding: 4px;
+  font-weight: bold;
+}
+
+.friend-list p
+{
+  margin-left: 12px;
+  cursor: default;
+}
+
+.friend-list button
+{
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 50%;
+  margin-right: 3px;
+}
+
+.friend-list button svg
+{
+  stroke-width: 2.5;
+  width: 30px;
+  color: white;
+}
+
+
+.friend-list button:hover svg, .friends-block button:hover svg
+{
+  transform: scale(1.1);
+}
+
+.friend-list button:active svg, .friends-block button:active svg
+{
+  transform: scale(0.9);
+}
+
+.friends-block
+{
+  margin-top: 8px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.friends-block img
+{
+  width: 40px;
+  border-radius: 50%;
+  margin-left: 12px;
+  cursor: pointer;
+}
+
+.friends-block p
+{
+  cursor: default;
+}
+
+.friends-block button
+{
+  position: relative;
+  z-index: 1;
+  margin-right: 6px;
+  background-color: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  padding: 5px 10px;
+}
+
+.friends-block svg
+{
+  color: white;
+}
+
+main
+{
+  min-height: 100vh;
+  min-width: 100vh;
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: 300px 1fr; 
+}
+
+header
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 50px;
+  height: 100px;
+}
+
+.search-section
+{
+  display: flex;
+  column-gap: 4px;
+  flex-wrap: nowrap;
+}
+
+.search-section input
+{
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 1.3em;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 1em;
+}
+
+.search-btn-header
+{
+  width: 50px;
+  border-radius: 1em;
+  background-color: #fb5607;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  margin-left: 8px;
+}
+
+.search-btn-header::before
+{
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  border-radius: 1em;
+  background-color: #3dc7f1;
+  top: 0;
+  left: 0;
+  transition: 0.15s all ease;
+}
+
+.search-btn-header:hover::before
+{
+  width: 100%;
+}
+
+.search-btn-header:active
+{
+  opacity: .85;
+}
+
+.search-btn-header svg
+{
+  color: white;
+  stroke-width: 3;
+  transition: 0.15s all ease;
+}
+
+.search-btn-header:hover svg
+{
+  transform: scale(1.15);
+}
+
+.search-btn-header:active svg
+{
+  transform: scale(.9);
+}
+
+.nav-section
+{
+  margin-top: 12px;
+  align-self: flex-start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 6px;
+}
+
+.nav-section a
+{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #edf2f4;
+  padding: 8px 15px;
+  border-radius: .5em;
+  column-gap: 6px;
+  text-decoration: none;
+  font-size: 1.2em;
+  width: max-content;
+  position: relative;
+  z-index: 1;
+}
+
+.nav-section a::before
+{
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #bec4c7;
+  height: 0;
+  z-index: -1;
+  border-radius: .5em;
+  transition: .15s all ease;
+}
+
+.nav-section a:hover::before
+{
+  height: 100%;
+}
+
+.nav-section a:active, .nav-section a:hover
+{
+  opacity: 0.85;
+}
+
+.right-section
+{
+  display: flex;
+}
+
+.main
+{
+
+}

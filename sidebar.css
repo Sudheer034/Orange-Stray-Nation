@@ -1,0 +1,148 @@
+aside
+{
+  background-color: #222629;
+  border-radius: 8px;
+  margin: 2px 2px;
+  min-height: 98vh;
+  box-shadow: 0px 12px 12px black;
+}
+
+.user-block, .friend-list, .friends-block
+{
+  box-sizing: border-box;
+  background-color: #343a40;
+  border-radius: 6px;
+  box-shadow: 1px 2px 2px black;
+  width: 99%;
+}
+
+.user-block
+{
+  margin-top: 4px;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  justify-items: center;
+  align-items: center;
+  font-weight: bold;
+  text-align: center;
+  height: 75px;
+}
+
+.user-block img
+{
+  width: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.user-info
+{
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+  text-shadow: 0px 0px 1px black;
+}
+
+.user-info p
+{
+  font-size: 1.2em;
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: default;
+}
+
+.user-info a
+{
+  text-decoration: none;
+  color: #7bb5fd;
+}
+
+.friend-list
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  margin-top: 6px;
+  padding: 4px;
+  font-weight: bold;
+}
+
+.friend-list p
+{
+  margin-left: 12px;
+  cursor: default;
+}
+
+.friend-list button
+{
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 50%;
+  margin-right: 3px;
+}
+
+.friend-list button svg
+{
+  stroke-width: 2.5;
+  width: 30px;
+  color: white;
+}
+
+
+.friend-list button:hover svg, .friends-block button:hover svg
+{
+  transform: scale(1.1);
+}
+
+.friend-list button:active svg, .friends-block button:active svg
+{
+  transform: scale(0.9);
+}
+
+.friends-block
+{
+  margin-top: 8px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.friends-block img
+{
+  width: 40px;
+  border-radius: 50%;
+  margin-left: 12px;
+  cursor: pointer;
+}
+
+.friends-block p
+{
+  cursor: default;
+}
+
+.friends-block button
+{
+  position: relative;
+  z-index: 1;
+  margin-right: 6px;
+  background-color: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  padding: 5px 10px;
+}
+
+.friends-block svg
+{
+  color: white;
+}
