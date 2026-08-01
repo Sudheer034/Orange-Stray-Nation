@@ -1,0 +1,24 @@
+body
+{
+  margin: 0;
+  color: white;
+  background: #272c31;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Montserrat", sans-serif;
+}
+
+p
+{
+  margin: 0;
+}
+
+main
+{
+  min-height: 100vh;
+  min-width: 100vh;
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: 300px 1fr; 
+}

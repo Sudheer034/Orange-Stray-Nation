@@ -1,0 +1,162 @@
+header
+{
+  box-sizing: border-box;
+  margin-top: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 50px;
+  height: 100px;
+}
+
+.search-section
+{
+  display: flex;
+  column-gap: 4px;
+  flex-wrap: nowrap;
+}
+
+.search-section input
+{
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 1.3em;
+  padding: 10px 15px;
+  border: none;
+  border-radius: .8em;
+}
+
+.search-btn-header
+{
+  width: 50px;
+  border-radius: 1em;
+  background-color: #fb5607;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  margin-left: 8px;
+}
+
+.search-btn-header::before
+{
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  border-radius: 1em;
+  background-color: #3dc7f1;
+  top: 0;
+  left: 0;
+  transition: 0.15s all ease;
+}
+
+.search-btn-header:hover::before
+{
+  width: 100%;
+}
+
+.search-btn-header:active
+{
+  opacity: .85;
+}
+
+.search-btn-header svg
+{
+  color: white;
+  stroke-width: 3;
+  transition: 0.15s all ease;
+}
+
+.search-btn-header:hover svg
+{
+  transform: scale(1.15);
+}
+
+.search-btn-header:active svg
+{
+  transform: scale(.9);
+}
+
+.nav-section
+{
+  align-self: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 18px;
+}
+
+.nav-section a
+{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f96b29;
+  color: white;
+  text-shadow: 0 0 1px black;
+  padding: 8px 15px;
+  border-radius: .5em;
+  column-gap: 6px;
+  text-decoration: none;
+  font-size: 1.2em;
+  width: max-content;
+  position: relative;
+  z-index: 1;
+}
+
+.nav-section a::before
+{
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #3dc7f1;
+  height: 0;
+  z-index: -1;
+  border-radius: .5em;
+  transition: .15s all ease;
+}
+
+.nav-section a:hover::before
+{
+  height: 100%;
+}
+
+.nav-section a:hover
+{
+  animation: shaky .42s infinite ease-in-out;
+  color: #121212;
+}
+
+.nav-section a:active
+{
+  opacity: 0.85;
+}
+
+.nav-section a svg
+{
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.3));
+}
+
+@keyframes shaky
+{
+  0%{
+    transform: rotate(0deg);
+  }
+
+  25%{
+    transform: rotate(3deg);
+  }
+
+  75%{
+    transform: rotate(-3deg);
+  }
+
+  100%{
+    transform: rotate(0deg);
+  }
+}
