@@ -4,7 +4,8 @@ aside
   border-radius: 8px;
   margin: 2px 2px;
   min-height: 98vh;
-  box-shadow: 2px 2px 1px black;
+  box-shadow: 1px 1px 1px black;
+  color: rgba(255,255,255,.92);
 }
 
 .user-block, .friend-list, .friends-block
@@ -12,7 +13,7 @@ aside
   box-sizing: border-box;
   background-color: #343a40;
   border-radius: 6px;
-  box-shadow: 1px 2px 2px black;
+  box-shadow: 1px 1px 2px black;
   width: 99%;
 }
 
