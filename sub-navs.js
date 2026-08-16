@@ -9,7 +9,7 @@ tabButtons.forEach((button) => {
     tabPanel.forEach(panel => panel.classList.remove('active'));
 
     button.classList.add('active');
-    const activeTab = document.getElementById(button.dataset.tab).classList.add('active');
+    document.getElementById(button.dataset.tab).classList.add('active');
 
     collapseMain.classList.add('active');
   });
